@@ -1,0 +1,78 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_claim_history",
+      "description": "Retrieve structured historical claims and loss events for a client. Use this tool only when the request involves claims history, prior losses, incidents, loss frequency, loss severity, or historical events. Do not use it for general company-profile facts such as headquarters, employee count, industry, revenue, markets, products, or company overview.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "client_name": {
+            "type": "string",
+            "description": "The exact client company name, such as Tailspin Toys, Northwind Traders, or Boulder Innovations."
+          }
+        },
+        "required": [
+          "client_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_insurance_program",
+      "description": "Retrieve structured insurance program information for a client. Use this tool only when the request involves insurance coverage, limits, deductibles, retentions, policy structure, or insurance adequacy. Do not use it for general company-profile facts such as headquarters, employee count, industry, revenue, markets, products, or company overview.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "client_name": {
+            "type": "string",
+            "description": "The exact client company name, such as Tailspin Toys, Northwind Traders, or Boulder Innovations."
+          }
+        },
+        "required": [
+          "client_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_facility_exposure",
+      "description": "Retrieve structured facility and operational exposure data for a client. Use this tool only when the request involves facilities, property exposure, site concentration, business interruption, operational dependencies, catastrophe exposure, or physical operations. Do not use this tool merely to answer general company-profile questions such as headquarters, employee count, industry, revenue, or markets. Use File Search for those profile facts.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "client_name": {
+            "type": "string",
+            "description": "The exact client company name, such as Tailspin Toys, Northwind Traders, or Boulder Innovations."
+          }
+        },
+        "required": [
+          "client_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_supply_chain_exposure",
+      "description": "Retrieve structured supply-chain exposure data for a client. Use this tool only when the request involves suppliers, sourcing, logistics, inventory, third-party manufacturing, supplier concentration, or supply-chain resilience. Do not use it for general company-profile facts such as headquarters, employee count, industry, revenue, markets, products, or company overview.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "client_name": {
+            "type": "string",
+            "description": "The exact client company name, such as Tailspin Toys, Northwind Traders, or Boulder Innovations."
+          }
+        },
+        "required": [
+          "client_name"
+        ]
+      }
+    }
+  }
+]

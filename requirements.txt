@@ -1,0 +1,14 @@
+# Microsoft Agent Framework + Foundry Hosted Agent support
+agent-framework
+agent-framework-foundry-hosting
+
+# Foundry project/toolbox management
+azure-ai-projects>=2.3.0
+
+# Authentication
+azure-identity
+
+# Local development environment variables
+python-dotenv
+
+azure-ai-agentserver-optimization
